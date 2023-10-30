@@ -1,0 +1,1098 @@
+2023-10-24 16:47:58,497 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationImplService from class org.tax.impl.TaxComputationServiceImpl
+2023-10-24 16:47:58,724 227    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/TaxComputation
+2023-10-24 16:47:58,738 241    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-24 16:47:58,773 276    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9002
+2023-10-24 19:08:07,556 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationImplService from class org.tax.impl.TaxComputationServiceImpl
+2023-10-24 19:08:07,923 367    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/TaxComputation
+2023-10-24 19:08:07,942 386    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-24 19:08:07,990 434    [           main] WARN  il.component.AbstractLifeCycle  - FAILED SelectChannelConnector@localhost:9002: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:362)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:251)
+	at org.apache.cxf.jaxws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:152)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at org.tax.impl.Main.main(Main.java:8)
+2023-10-24 19:08:07,992 436    [           main] WARN  il.component.AbstractLifeCycle  - FAILED org.eclipse.jetty.server.Server@4145bad8: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:362)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:251)
+	at org.apache.cxf.jaxws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:152)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at org.tax.impl.Main.main(Main.java:8)
+2023-10-24 19:08:07,995 439    [           main] ERROR tp_jetty.JettyHTTPServerEngine  - Could not start Jetty server on port 9,002: Address already in use
+2023-10-24 19:08:26,550 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationImplService from class org.tax.impl.TaxComputationServiceImpl
+2023-10-24 19:08:26,888 338    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/TaxComputation
+2023-10-24 19:08:26,911 361    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-24 19:08:26,956 406    [           main] WARN  il.component.AbstractLifeCycle  - FAILED SelectChannelConnector@localhost:9002: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:362)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:251)
+	at org.apache.cxf.jaxws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:152)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at org.tax.impl.Main.main(Main.java:8)
+2023-10-24 19:08:26,959 409    [           main] WARN  il.component.AbstractLifeCycle  - FAILED org.eclipse.jetty.server.Server@4145bad8: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.jaxws.EndpointImpl.doPublish(EndpointImpl.java:362)
+	at org.apache.cxf.jaxws.EndpointImpl.publish(EndpointImpl.java:251)
+	at org.apache.cxf.jaxws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:152)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at org.tax.impl.Main.main(Main.java:8)
+2023-10-24 19:08:26,962 412    [           main] ERROR tp_jetty.JettyHTTPServerEngine  - Could not start Jetty server on port 9,002: Address already in use
+2023-10-24 19:10:16,858 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationImplService from class org.tax.impl.TaxComputationServiceImpl
+2023-10-24 19:10:17,203 345    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/TaxComputation
+2023-10-24 19:10:17,222 364    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-24 19:10:17,272 414    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9002
+2023-10-24 19:35:16,557 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationImplService from class org.tax.impl.TaxComputationServiceImpl
+2023-10-24 19:35:16,929 372    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/TaxComputation
+2023-10-24 19:35:16,952 395    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-24 19:35:17,002 445    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9002
+2023-10-24 19:36:05,798 49241  [tp1183231938-20] WARN  xf.phase.PhaseInterceptorChain  - Interceptor for {http://impl.tax.org/}TaxComputationImplService#{http://impl.tax.org/}taxComputation has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://service.tian.org/}taxComputation found.   Expected {http://impl.tax.org/}taxComputation.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:105)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:243)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:261)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:70)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-24 19:39:03,204 226647 [tp1183231938-20] WARN  xf.phase.PhaseInterceptorChain  - Interceptor for {http://impl.tax.org/}TaxComputationImplService#{http://impl.tax.org/}taxComputation has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://service.tian.org/}taxComputation found.   Expected {http://impl.tax.org/}taxComputation.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:105)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:243)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:261)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:70)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-28 15:55:36,858 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationServiceImplService from class org.tax.TaxComputationService
+2023-10-28 15:55:37,080 222    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9001/ws/taxComputation
+2023-10-28 15:55:37,090 232    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 15:55:37,118 260    [           main] WARN  il.component.AbstractLifeCycle  - FAILED SelectChannelConnector@localhost:9001: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.frontend.ServerFactoryBean.create(ServerFactoryBean.java:215)
+	at org.apache.cxf.jaxws.JaxWsServerFactoryBean.create(JaxWsServerFactoryBean.java:211)
+	at org.tax.Server.main(Server.java:25)
+2023-10-28 15:55:37,119 261    [           main] WARN  il.component.AbstractLifeCycle  - FAILED org.eclipse.jetty.server.Server@229c6181: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:293)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:417)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:179)
+	at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:49)
+	at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95)
+	at org.apache.cxf.binding.soap.SoapBindingFactory.addListener(SoapBindingFactory.java:895)
+	at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:123)
+	at org.apache.cxf.frontend.ServerFactoryBean.create(ServerFactoryBean.java:215)
+	at org.apache.cxf.jaxws.JaxWsServerFactoryBean.create(JaxWsServerFactoryBean.java:211)
+	at org.tax.Server.main(Server.java:25)
+2023-10-28 15:55:37,120 262    [           main] ERROR tp_jetty.JettyHTTPServerEngine  - Could not start Jetty server on port 9,001: Address already in use
+2023-10-28 15:56:06,804 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationServiceImplService from class org.tax.TaxComputationService
+2023-10-28 15:56:07,040 236    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/taxComputation
+2023-10-28 15:56:07,053 249    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 15:56:07,098 294    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9002
+2023-10-28 15:56:22,027 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationServiceImplService from class org.tax.TaxComputationService
+2023-10-28 15:56:22,242 215    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9002/ws/taxComputation
+2023-10-28 15:56:22,254 227    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 15:56:22,287 260    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9002
+2023-10-28 15:56:37,417 15390  [tp1397381784-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9002/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9002], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 15:56:37,451 15424  [tp1397381784-15] WARN  xf.phase.PhaseInterceptorChain  - Interceptor for {http://impl.tax.org/}TaxComputationServiceImplService#{http://tax.org/}computationTax has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://service.tian.org/}computationTax found.   Expected {http://tax.org/}computationTax.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:105)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:243)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:261)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:70)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-28 15:58:18,930 116903 [tp1397381784-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9002/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9002], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 15:58:18,930 116903 [tp1397381784-15] WARN  xf.phase.PhaseInterceptorChain  - Interceptor for {http://impl.tax.org/}TaxComputationServiceImplService#{http://tax.org/}computationTax has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://service.tian.org/}computationTax found.   Expected {http://tax.org/}computationTax.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:105)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:243)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:261)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:70)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-28 15:59:25,260 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.tax.org/}TaxComputationServiceImplService from class org.tax.TaxComputationService
+2023-10-28 15:59:25,470 210    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-28 15:59:25,483 223    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 15:59:25,516 256    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-28 15:59:31,205 5945   [tp1397381784-18] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 15:59:31,247 5987   [tp1397381784-18] WARN  xf.phase.PhaseInterceptorChain  - Interceptor for {http://impl.tax.org/}TaxComputationServiceImplService#{http://tax.org/}computationTax has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Unexpected wrapper element {http://service.tian.org/}computationTax found.   Expected {http://tax.org/}computationTax.
+	at org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor.handleMessage(DocLiteralInInterceptor.java:105)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:243)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:261)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:70)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1088)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1024)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:750)
+2023-10-28 16:01:11,752 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-28 16:01:11,956 204    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-28 16:01:11,967 215    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 16:01:12,001 249    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-28 16:01:25,869 14117  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:01:25,932 14180  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>10000.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:02:16,454 64702  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:02:16,455 64703  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>10000.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:04:37,995 206243 [tp1397381784-20] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:04:37,996 206244 [tp1397381784-20] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>10000.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:05:32,219 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://service.tian.org/}TaxComputationServiceService from class org.tian.service.TaxComputationService
+2023-10-28 16:05:32,522 260770 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 16:05:32,523 260771 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>10000.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:06:13,113 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-28 23:06:13,354 241    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-28 23:06:13,366 253    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 23:06:13,398 285    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-28 23:07:31,416 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-28 23:07:31,623 207    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-28 23:07:31,633 217    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 23:07:31,666 250    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-28 23:34:37,019 1625603 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[204], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>11.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:34:37,079 1625663 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>11000.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:34:59,984 1648568 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>11000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:34:59,987 1648571 [tp1397381784-21] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>1.1E7</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:35:04,730 1653314 [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[207], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>10000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:35:04,733 1653317 [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>1.0E7</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:49:14,526 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-28 23:49:14,728 202    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-28 23:49:14,739 213    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-28 23:49:14,769 243    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-28 23:50:03,493 48967  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[208], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>120000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-28 23:50:03,548 49022  [tp1397381784-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>30850.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:15:06,495 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:15:06,717 222    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:15:06,728 233    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:15:06,762 267    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:15:32,236 25741  [ qtp33533830-21] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:15:32,287 25792  [ qtp33533830-21] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>2910.0</return><return>0.03</return><return>90.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:15:45,872 39377  [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>6000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:15:45,874 39379  [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5750.0</return><return>0.041666666666666664</return><return>250.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:22:53,659 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:22:53,863 204    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:22:53,874 215    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:22:53,907 248    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:23:01,334 7675   [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:23:01,391 7732   [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>2910.0</return><return>3.0</return><return>90.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:25:00,063 126404 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>4000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:25:00,065 126406 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>3880.0</return><return>3.0</return><return>120.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:25:55,048 181389 [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>6000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:25:55,050 181391 [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5400.0</return><return>10.0</return><return>600.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:28:47,256 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:28:47,473 217    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:28:47,484 228    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:28:47,516 260    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:29:14,648 27392  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:29:14,700 27444  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>3000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:29:24,294 37038  [ qtp33533830-20] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:29:24,298 37042  [ qtp33533830-20] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>4950.0</return><return>10.0</return><return>550.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:29,700 162444 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:29,703 162447 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>3000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:34,139 166883 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:34,142 166886 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:36,973 169717 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5001.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:31:36,977 169721 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>4500.9</return><return>10.0</return><return>500.1</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:34:36,733 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:34:36,955 222    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:34:36,966 233    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:34:37,002 269    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:35:01,752 25019  [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>4000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:35:01,804 25071  [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>4000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:35:06,740 30007  [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:35:06,750 30017  [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5450.0</return><return>10.0</return><return>50.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:38:24,111 227378 [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:38:24,114 227381 [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5450.0</return><return>10.0</return><return>50.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:38:25,348 228615 [ qtp33533830-21] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:38:25,351 228618 [ qtp33533830-21] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5450.0</return><return>10.0</return><return>50.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:00,210 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:39:00,422 212    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:39:00,432 222    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:39:00,464 254    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:39:26,540 26330  [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:26,592 26382  [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5335.0</return><return>3.0</return><return>165.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:42,171 41961  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:42,174 41964  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:47,180 46970  [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:39:47,183 46973  [ qtp33533830-17] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5335.0</return><return>3.0</return><return>165.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:02,144 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 00:51:02,368 224    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 00:51:02,379 235    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 00:51:02,411 267    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 00:51:27,564 25420  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>1000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:27,617 25473  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>1000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:33,188 31044  [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:33,190 31046  [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5485.0</return><return>3.0</return><return>15.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:39,701 37557  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>8100.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:51:39,704 37560  [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>7790.0</return><return>10.0</return><return>310.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:55:30,538 268394 [ qtp33533830-18] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[208], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>325235.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:55:30,540 268396 [ qtp33533830-18] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>181129.25</return><return>45.0</return><return>144105.75</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:57:17,228 375084 [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:57:17,229 375085 [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5485.0</return><return>3.0</return><return>15.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:57:25,792 383648 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 6
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:57:25,794 383650 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5485.0</return><return>3.0</return><return>15.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:59:02,170 480026 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 7
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 00:59:02,171 480027 [ qtp33533830-15] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>3000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:02:06,217 664073 [ qtp33533830-18] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 8
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:02:06,218 664074 [ qtp33533830-18] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:03:56,190 774046 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 9
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>3000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:03:56,191 774047 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>3000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:04:03,232 781088 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 10
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5500.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:04:03,234 781090 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5485.0</return><return>3.0</return><return>15.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:05:34,407 872263 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 11
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>5400.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 01:05:34,408 872264 [ qtp33533830-16] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 11
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5388.0</return><return>3.0</return><return>12.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 14:59:31,132 0      [           main] INFO  y.ReflectionServiceFactoryBean  - Creating Service {http://impl.service.tian.org/}TaxComputationServiceImplService from class org.tian.service.TaxComputationService
+2023-10-29 14:59:31,377 245    [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:9000/ws/taxComputation
+2023-10-29 14:59:31,388 256    [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2023-10-29 14:59:31,419 287    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:9000
+2023-10-29 15:04:16,534 285402 [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>4000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 15:04:16,591 285459 [ qtp33533830-19] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>4000.0</return><return>0.0</return><return>0.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 15:04:27,556 296424 [ qtp33533830-20] INFO  ImplPort.TaxComputationService  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:9000/ws/taxComputation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml; charset=UTF-8
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[206], content-type=[text/xml; charset=UTF-8], Host=[localhost:9000], Pragma=[no-cache], SOAPAction=[""], User-Agent=[Apache CXF 3.0.1]}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTax xmlns:ns2="http://service.tian.org/"><arg0>6000.0</arg0></ns2:computationTax></soap:Body></soap:Envelope>
+--------------------------------------
+2023-10-29 15:04:27,559 296427 [ qtp33533830-20] INFO  ImplPort.TaxComputationService  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:computationTaxResponse xmlns:ns2="http://service.tian.org/"><return>5970.0</return><return>3.0</return><return>30.0</return></ns2:computationTaxResponse></soap:Body></soap:Envelope>
+--------------------------------------
